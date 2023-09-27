@@ -1,0 +1,54 @@
+:root {
+    --texColor: #000;
+    --yellow: #EBD96B;
+}
+
+body {
+    color: var(--texColor);
+}
+
+
+.header {
+  padding-top: 46px;
+  padding-bottom: 56px;
+}
+
+.header__nav {
+  display: flex;
+  /* column-gap: 30px; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+
+  color: var(--texColor);
+
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+li a {
+  color: var(--texColor);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.22px;
+  text-transform: uppercase;
+}
+
+.header__nav-btn {
+    padding: 13px 22px 17px;
+    background-color: var(--texColor);
+    color: white;
+    border-radius: 7px;
+}

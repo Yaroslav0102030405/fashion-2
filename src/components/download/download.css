@@ -1,0 +1,38 @@
+.download {
+    padding-bottom: 130px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.download__list {
+  display: flex;
+  column-gap: 19px;
+}
+
+.download__title {
+  margin-right: 339px;
+  padding-top: 240px;
+  margin-bottom: 41px;
+
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 72px; /* 72px */
+  letter-spacing: 2.88px;
+}
+
+.download__text {
+    margin-bottom: 65px;
+    position: relative;
+  width: 419px;
+  height: 61px;
+
+  color: #7c7c7c;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px; /* 145.833% */
+  letter-spacing: -0.96px;
+}
