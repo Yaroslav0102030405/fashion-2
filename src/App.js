@@ -3,15 +3,14 @@ import React from "react";
 import Header from "./components/header/Header";
 import Promo from "./components/promo/Promo";
 import Brands from "./components/brands/Brands";
-import Card from "./components/card/Card";
 import Sale from "./components/sale/Sale";
-import Favorite from "./components/favorite/Favorite";
+// import Favorite from "./components/favorite/Favorite";
+import FavoriteMarkup from "./components/FavoriteMarkup/FavoriteMarkup";
 import Download from "./components/download/Download";
 import Community from "./components/community/Community";
-import Footer from "./components/footer/Footel";
-import CardDates from './CardDates.json'
+import Footer from "./components/footer/Footer";
+import CardMarkup from "./components/CardMarkup/CardMarkup";
 
-// import CardDateList from "./components/card/CardDateList";
 
 function App() {
   return (
@@ -19,21 +18,9 @@ function App() {
       <Header />
       <Promo />
       <Brands />
-      {/* <CardDateList items={CardDates} /> */}
-
-      <Card
-        url={CardDates[0].url}
-        title={CardDates[0].title}
-        text={CardDates[0].text}
-      />
-      <Card
-        url={CardDates[1].url}
-        title={CardDates[1].title}
-        text={CardDates[1].text}
-      />
-
+      <CardMarkup />
       <Sale />
-      <Favorite />
+      <FavoriteMarkup />
       <Download />
       <Community />
       <Footer />

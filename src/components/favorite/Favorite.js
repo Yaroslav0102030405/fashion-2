@@ -1,30 +1,23 @@
 import React from "react";
 import "./favorite.css";
-import Promo04 from "./../../image/images/promo-04.jpg";
-import Promo05 from "./../../image/images/promp-05.jpg";
+import PropTypes from "prop-types";
+// import FavoriteMarkup from "../FavoriteMarkup/FavoriteMarkup";
 
-const Favorite = () => {
+const Favorite = ({img, title, text}) => {
   return (
-    <section className="favorite">
-      <div className="container">
-        <h2 className="favorite__title">Young’s Favourite</h2>
-        <ul className="favorite__wrapper">
-          <li>
-            <img className="favorite__img" src={Promo04} alt="Promo04" />
-            <h3 className="favorite__text">Trending on instagram</h3>
-            <span></span>
-            <p>Explore Now!</p>
-          </li>
-          <li>
-            <img className="favorite__img" src={Promo05} alt="Promo05" />
-            <h3 className="favorite__text">All Under $40</h3>
-            <span></span>
-            <p>Explore Now!</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <>
+      <img className="favorite__img" src={img} alt="Promo05" />
+      <h3 className="favorite__text">{title}</h3>
+      <span></span>
+      <p>{text}</p>
+    </>
   );
+};
+
+Favorite.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Favorite;
