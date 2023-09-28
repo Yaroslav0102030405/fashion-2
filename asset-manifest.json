@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/fashion/static/css/main.e34174c9.css",
-    "main.js": "/fashion/static/js/main.5639c0bc.js",
-    "static/media/header-img.png": "/fashion/static/media/header-img.009254dfb3bc54173dae.png",
-    "static/media/promo-04.jpg": "/fashion/static/media/promo-04.6ae527675fdb0ca56c7a.jpg",
-    "static/media/vouchers-img.png": "/fashion/static/media/vouchers-img.8312cec99c62c682d230.png",
-    "static/media/card-03.jpg": "/fashion/static/media/card-03.385c38267ff6e41daad7.jpg",
-    "static/media/card-01.jpg": "/fashion/static/media/card-01.4a3fec8151f36af3ebbb.jpg",
-    "static/media/promp-05.jpg": "/fashion/static/media/promp-05.f5c1701d44770d0c1ece.jpg",
-    "static/media/sale-remove.png": "/fashion/static/media/sale-remove.88deb5df3bd6691d78ca.png",
-    "static/media/card-02.jpg": "/fashion/static/media/card-02.b46418cb3b01bca92db9.jpg",
-    "static/media/amazon.png": "/fashion/static/media/amazon.8147eaff712ddbb636a0.png",
-    "static/media/shopify.png": "/fashion/static/media/shopify.bf70fa9caf43cad1e916.png",
-    "static/media/logo.svg": "/fashion/static/media/logo.1a9acb32fd93666aaec24e52b3d0d126.svg",
-    "index.html": "/fashion/index.html",
-    "static/media/arrow.svg": "/fashion/static/media/arrow.c02015c16f43c3f787f5.svg",
-    "static/media/yellow.svg": "/fashion/static/media/yellow.6ef7a2079e395df3ef84.svg",
-    "static/media/decor-yellow.svg": "/fashion/static/media/decor-yellow.993270be448e91ccc563.svg",
-    "main.e34174c9.css.map": "/fashion/static/css/main.e34174c9.css.map",
-    "main.5639c0bc.js.map": "/fashion/static/js/main.5639c0bc.js.map"
+    "main.css": "/fashion-2/static/css/main.e6e39498.css",
+    "main.js": "/fashion-2/static/js/main.bebf57d0.js",
+    "static/media/header-img.png": "/fashion-2/static/media/header-img.009254dfb3bc54173dae.png",
+    "static/media/promo-04.jpg": "/fashion-2/static/media/promo-04.6ae527675fdb0ca56c7a.jpg",
+    "static/media/vouchers-img.png": "/fashion-2/static/media/vouchers-img.8312cec99c62c682d230.png",
+    "static/media/card-03.jpg": "/fashion-2/static/media/card-03.385c38267ff6e41daad7.jpg",
+    "static/media/card-01.jpg": "/fashion-2/static/media/card-01.4a3fec8151f36af3ebbb.jpg",
+    "static/media/promp-05.jpg": "/fashion-2/static/media/promp-05.f5c1701d44770d0c1ece.jpg",
+    "static/media/sale-remove.png": "/fashion-2/static/media/sale-remove.88deb5df3bd6691d78ca.png",
+    "static/media/card-02.jpg": "/fashion-2/static/media/card-02.b46418cb3b01bca92db9.jpg",
+    "static/media/amazon.png": "/fashion-2/static/media/amazon.8147eaff712ddbb636a0.png",
+    "static/media/shopify.png": "/fashion-2/static/media/shopify.bf70fa9caf43cad1e916.png",
+    "static/media/logo.svg": "/fashion-2/static/media/logo.1a9acb32fd93666aaec24e52b3d0d126.svg",
+    "index.html": "/fashion-2/index.html",
+    "static/media/arrow.svg": "/fashion-2/static/media/arrow.c02015c16f43c3f787f5.svg",
+    "static/media/yellow.svg": "/fashion-2/static/media/yellow.6ef7a2079e395df3ef84.svg",
+    "static/media/decor-yellow.svg": "/fashion-2/static/media/decor-yellow.993270be448e91ccc563.svg",
+    "main.e6e39498.css.map": "/fashion-2/static/css/main.e6e39498.css.map",
+    "main.bebf57d0.js.map": "/fashion-2/static/js/main.bebf57d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e34174c9.css",
-    "static/js/main.5639c0bc.js"
+    "static/css/main.e6e39498.css",
+    "static/js/main.bebf57d0.js"
   ]
 }
