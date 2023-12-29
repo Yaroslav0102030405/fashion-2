@@ -34,7 +34,14 @@
 .card__list {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .card__list {
+    flex-direction: column;
+  }
+  }
 
 .card__last-name {
   position: relative;
@@ -57,7 +64,10 @@
   letter-spacing: -0.96px;
 }
 
-.card__last-name::after {
+
+
+@media screen and (min-width: 1780px) {
+  .card__last-name::after {
   content: "";
   display: block;
   position: absolute;
@@ -71,6 +81,7 @@
 
   background-image: url("./../../image/categories/arrow.svg");
   background-repeat: no-repeat;
+}
 }
 
 .card__img {

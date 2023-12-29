@@ -13,11 +13,19 @@
   border-radius: 59px;
 }
 
+@media screen and (max-width: 768px) {
+  .promo__content {
+    flex-direction: column;
+  }
+}
+
 /* .promo__text {
 
 } */
 
 .promo__title {
+  display: flex;
+ flex-direction: column;
   max-width: 474px;
   margin-bottom: 40px;
 
@@ -25,6 +33,12 @@
   font-weight: 900;
   line-height: calc( 120 / 96); 
   /* или 1.25 */
+}
+
+.promo__img {
+  display: flex;
+  position: relative;
+  z-index: -1;
 }
 
 .promo__highlight span {

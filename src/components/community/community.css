@@ -9,8 +9,8 @@
   margin: 0 auto;
   margin-bottom: 37px;
 
-  width: 966px;
-  height: 124px;
+  max-width: 966px;
+  max-height: 124px;
 
   color: #fff;
   text-align: center;
@@ -61,6 +61,11 @@ form {
   text-transform: uppercase;
 
   border-radius: 10px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 383px;
+    
+  }
 }
 
 .community__input {

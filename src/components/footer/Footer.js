@@ -6,7 +6,7 @@ const Footer = () => {
     <section className="footer">
       <div className="container">
         <div className="footer__wrapper">
-          <div>
+          <div className="footer__left">
             <a className="footer__logo" href="#!">
               fashion
             </a>

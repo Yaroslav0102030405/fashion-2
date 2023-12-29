@@ -5,8 +5,21 @@
   background: #000;
 }
 
-.favorite__wrapper {
+.footer__wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+   @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.footer__left {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer__logo {
@@ -59,12 +72,10 @@
 
 .footer__hight {
   display: flex;
-}
 
-.footer__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 svg {

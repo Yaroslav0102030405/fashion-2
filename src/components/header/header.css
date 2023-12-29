@@ -23,6 +23,10 @@ body {
 .header__list {
   display: flex;
   column-gap: 30px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .header__logo {
