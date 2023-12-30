@@ -1,5 +1,5 @@
 .overlay {
-   background-color: #e5c643;
+  background-color: #e5c643;
 }
 
 /* .sale__img {
@@ -7,29 +7,43 @@
 } */
 
 .wrapper {
-    display: flex;
+  display: flex;
 }
 
 .sale__right {
-padding-top: 139px;
-padding-bottom: 155px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1780px) {
+  .sale__right {
+    padding-top: 139px;
+    padding-bottom: 155px;
+  }
 }
 
 .sale__title {
-    margin-bottom: 33px;
-    width: 593.233px;
+  margin-bottom: 33px;
+  width: 593.233px;
 
-font-size: 111.608px;
-font-weight: 900;
-line-height: 122.917%; /* 122.917% */
+  font-size: 111.608px;
+  font-weight: 900;
+  line-height: 122.917%; /* 122.917% */
 
-text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .sale__title {
+    width: 250px;
+    font-size: 56px;
+  }
 }
 
 .sale__text {
-    margin-bottom: 40px;
-  width: 643.085px;
-  height: 90.682px;
+  margin-bottom: 40px;
+  max-width: 643px;
+  /* height: 90px; */
 
   font-size: 36px;
   font-weight: 500;
@@ -37,21 +51,43 @@ text-transform: uppercase;
   letter-spacing: -0.721px;
 }
 
+@media screen and (max-width: 768px) {
+  .sale__text {
+    text-align: center;
+    width: 267px;
+    font-size: 20px;
+  }
+}
+
 .sale__date {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
   font-size: 36px;
   font-weight: 700;
   line-height: calc(36 / 52); /* 145.161% */
   letter-spacing: 0.721px;
 }
 
+@media screen and (max-width: 768px) {
+  .sale__date {
+    font-size: 24px;
+  }
+}
+
 .sale__text-text {
-    margin-bottom: 51px;
+  margin-bottom: 51px;
   font-size: 36px;
 
   font-weight: 400;
   line-height: calc(36 / 52); /* 145.161% */
   letter-spacing: -0.721px;
+}
+
+@media screen and (max-width: 768px) {
+  .sale__text-text {
+    /* padding-top: 139px;
+    padding-bottom: 155px; */
+    font-size: 20px;
+  }
 }
 
 .sale__btn {
@@ -67,6 +103,13 @@ text-transform: uppercase;
 }
 
 .sale__img {
-  width: 992px;
-  height: 968px;
+  display: none;
+}
+
+@media screen and (min-width: 1780px) {
+  .sale__img {
+    display: block;
+    width: 992px;
+    height: 968px;
+  }
 }

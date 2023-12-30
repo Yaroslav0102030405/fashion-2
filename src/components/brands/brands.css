@@ -1,17 +1,26 @@
 .brands {
-    padding: 58px 174px;
-    background-color: var(--yellow);
+  padding: 58px 174px;
+  background-color: var(--yellow);
 
-    padding: 50px 0 58px;
-
+  padding: 50px 0 58px;
 }
 
 .brands__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 120px;
+  mix-blend-mode: multiply;
+}
 
-    mix-blend-mode: multiply;
+@media screen and (max-width: 767px) {
+  .brands__list {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 1199px) {
+  .brands__list {
+    column-gap: 0;
+  }
 }

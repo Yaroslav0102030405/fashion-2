@@ -7,25 +7,35 @@ function Header() {
     <header className="header">
       <div className="container">
         <nav className="header__nav">
-          <a className="header__logo" href="#!">
-            <img src={logo}/>
+          <a className="header__logo" href="/">
+            <img src={logo} />
             fashion
           </a>
           <ul className="header__list">
             <li>
-              <a href="#!">catalogue</a>
+              <a className="header__link" href="#catalogue">
+                catalogue
+              </a>
             </li>
             <li>
-              <a href="#!">fashion</a>
+              <a className="header__link" href="#fashion">
+                fashion
+              </a>
             </li>
             <li>
-              <a href="#!">favourite</a>
+              <a className="header__link" href="#favorite">
+                favourite
+              </a>
             </li>
             <li>
-              <a href="#!">lifestyle</a>
+              <a className="header__link" href="#lifestyle">
+                lifestyle
+              </a>
             </li>
             <li>
-              <a href="#!" className="header__nav-btn">sign up</a>
+              <a href="#!" className="header__nav-btn">
+                sign up
+              </a>
             </li>
           </ul>
         </nav>

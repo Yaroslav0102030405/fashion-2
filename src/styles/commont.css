@@ -1,9 +1,10 @@
 body {
+    margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
-  width: 100%;
   /* max-width: 1780px; */
   margin: 0 auto;
   padding: 0 30px;
@@ -26,3 +27,55 @@ body {
     width: 1780px;
   }
 }
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  padding: 0;
+  color: var(--title-color);
+} */
+
+a {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin-top: 0;
+  /* padding: 0;
+  margin: 0; */
+}
+
+/* Личный нормализатор -------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  padding: 0;
+  /* padding: 0;
+  margin: 0; */
+  color: var(--title-color);
+}
+
+/* Зброс зазора */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* margin: 0px;
+  padding: 0px; */
+}/*# sourceMappingURL=base.css.map */

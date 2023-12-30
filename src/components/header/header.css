@@ -1,4 +1,5 @@
 /* @import '../../styles/commont.css'; */
+@import "./../../styles/commont.css";
 
 :root {
   --texColor: #000;
@@ -23,10 +24,21 @@ body {
 
 .header__list {
   display: flex;
+  align-items: center;
   column-gap: 30px;
+  /* font-size: 11px; */
+  font-size: 11px;
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .header__list {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1780px) {
+  .header__list {
+    font-size: 22px;
   }
 }
 
@@ -43,19 +55,25 @@ body {
   text-transform: uppercase;
 }
 
-li a {
+.header__link {
   color: var(--texColor);
-  font-size: 11px;
+  /* font-size: 11px; */
   font-weight: 500;
   letter-spacing: 0.22px;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1680) {
-  li a {
+/* @media screen and (min-width: 768) and (max-width: 1280px) {
+  .header__link {
+    font-size: 11px;
+  }
+} */
+
+/* @media screen and (min-width: 1780) {
+  .header__link {
     font-size: 22px;
   }
-}
+} */
 
 .header__nav-btn {
   padding: 13px 22px 17px;

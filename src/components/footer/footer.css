@@ -1,24 +1,33 @@
 .footer {
-  padding-top: 119px;
-  padding-bottom: 147px;
-
+  padding-top: 70px;
+  padding-bottom: 40px;
   background: #000;
+}
+
+@media screen and (min-width: 1780px) {
+  .footer {
+    padding-top: 119px;
+    padding-bottom: 147px;
+  }
 }
 
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  /* text-align: center; */
+  /* align-items: baseline; */
+}
 
-   @media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .footer__wrapper {
     flex-direction: column;
   }
 }
 
-.footer__left {
-  @media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1780px) {
+  .footer__wrapper {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
 
@@ -35,7 +44,7 @@
 
 .footer__text {
   margin-bottom: 32px;
-  width: 415px;
+  max-width: 415px;
   color: #8e8e8e;
   font-size: 20px;
   font-weight: 400;
@@ -43,20 +52,45 @@
   letter-spacing: 0.4px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__text  {
+    text-align: center;
+  }
+}
+
 .social {
   display: flex;
   column-gap: 14px;
 }
 
+@media screen and (max-width: 1780px) {
+  .social {
+    margin-bottom: 38px;
+  }
+}
+
+ 
+  @media screen and (max-width: 768px) {
+  .footer__social-right  {
+    text-align: center;
+  }
+}
+
 .footer__hight-title {
   margin-bottom: 32px;
-  margin-right: 200px;
+  margin-right: 0;
   color: #d9d9d9;
 
   font-size: 20px;
   font-weight: 400;
   line-height: calc(20 / 40); /* 200% */
   letter-spacing: 0.4px;
+}
+
+@media screen and (min-width: 1780px) {
+  .footer__hight-title {
+    margin-right: 200px;
+  }
 }
 
 .footer__hight-text {
@@ -73,17 +107,27 @@
 .footer__hight {
   display: flex;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1780px) {
     flex-direction: column;
   }
 }
 
 svg {
-  fill: #EBD96B;
-  
+  fill: #ebd96b;
   cursor: pointer;
 }
 
 svg:hover {
- fill: #fff;
+  fill: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+

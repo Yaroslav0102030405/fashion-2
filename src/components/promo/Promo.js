@@ -27,7 +27,7 @@ const Promo = () => {
               </button>
             </span>
           </div>
-          <div className="promp__img">
+          <div className="promo__img">
             <img src={PromoImg} alt="Promo" />
           </div>
         </div>

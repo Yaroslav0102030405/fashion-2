@@ -5,7 +5,7 @@ import AppStore from "./../../image/icons/app-store.png";
 import GooglePlay from "./../../image/icons/google-play.png";
 const Download = () => {
   return (
-    <section className="download">
+    <section className="download" id="catalogue">
       <div className="container">
         <div className="wrapper">
           <div>
@@ -36,7 +36,7 @@ const Download = () => {
             </ul>
           </div>
           <div>
-            <img src={Vouch} alt="" />
+            <img className="download__google-phone" src={Vouch} alt="vouch" />
           </div>
         </div>
       </div>

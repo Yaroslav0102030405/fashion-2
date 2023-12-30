@@ -4,12 +4,12 @@ import SaleImg from './../../image/sale/sale-remove.png';
 
 const Sale = () => {
     return (
-      <section className="sale">
+      <section className="sale" id="lifestyle">
         <div className="overlay">
           <div className="container">
             <div className="wrapper">
               <div className="sale__img">
-                <img className="sale__img" src={SaleImg} alt="sale"/>
+                <img className="sale__img" src={SaleImg} alt="sale" />
               </div>
               <div className="sale__right">
                 <h2 className="sale__title">payday sale now</h2>
