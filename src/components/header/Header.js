@@ -33,7 +33,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#!" className="header__nav-btn">
+              <a href="#!" className="header__link">
                 sign up
               </a>
             </li>
