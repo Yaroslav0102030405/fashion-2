@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const Favorite = ({img, title, text}) => {
   return (
     <>
-      <section id="favorite">
+      <section  id="favorite">
         <img className="favorite__img" src={img} alt="Promo05" />
         <h3 className="favorite__text">{title}</h3>
         <span></span>

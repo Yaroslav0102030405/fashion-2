@@ -2,12 +2,27 @@ import React from "react";
 import "./promo.css";
 import PromoImg from "./../../image/images/header-img.png";
 
+import { motion } from "framer-motion";
+
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
+
+
 const Promo = () => {
   return (
-    <section className="promo">
+    <motion.section initial="hidden" whileInView="visible" className="promo">
       <div className="container">
         <div className="promo__content">
-          <div className="promo__text">
+          <motion.div custom={1} variants={Animation} className="promo__text">
             <h1 className="promo__title">
               <span className="promo__highlight">
                 <span>LET’S</span>
@@ -26,13 +41,13 @@ const Promo = () => {
                 Shop Now
               </button>
             </span>
-          </div>
-          <div className="promo__img">
+          </motion.div>
+          <motion.div custom={2} variants={Animation} className="promo__img">
             <img src={PromoImg} alt="Promo" />
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

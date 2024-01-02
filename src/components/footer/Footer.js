@@ -1,12 +1,26 @@
 import React from "react";
 import "./footer.css";
 
+import { motion } from "framer-motion";
+
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
+
 const Footer = () => {
   return (
-    <section className="footer">
+    <motion.section initial="hidden" whileInView="visible" className="footer">
       <div className="container">
         <div className="footer__wrapper">
-          <div className="footer__left">
+          <motion.div custom={1} variants={Animation} className="footer__left">
             <a className="footer__logo" href="#!">
               fashion
             </a>
@@ -20,7 +34,6 @@ const Footer = () => {
                   width="52"
                   height="53"
                   viewBox="0 0 52 53"
-                  
                 >
                   <rect
                     y="0.395996"
@@ -103,9 +116,9 @@ const Footer = () => {
                 </svg>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="footer__hight">
+          <motion.div custom={2} variants={Animation} className="footer__hight">
             <ul className="footer__social-right">
               <li className="footer__hight-title">Company</li>
               <li className="footer__hight-text">About</li>
@@ -125,10 +138,10 @@ const Footer = () => {
               <li className="footer__hight-text">Terms & conditions</li>
               <li className="footer__hight-text">Privacy Policy</li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

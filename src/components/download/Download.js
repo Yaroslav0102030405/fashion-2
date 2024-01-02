@@ -1,14 +1,35 @@
 import React from "react";
 import "./download.css";
+
+import { motion } from "framer-motion";
+
 import Vouch from "./../../image/images/vouchers-img.png";
 import AppStore from "./../../image/icons/app-store.png";
 import GooglePlay from "./../../image/icons/google-play.png";
+
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
+
 const Download = () => {
   return (
-    <section className="download" id="catalogue">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      className="download"
+      id="catalogue"
+    >
       <div className="container">
         <div className="wrapper">
-          <div>
+          <motion.div custom={1} variants={Animation}>
             <h2 className="download__title">
               DOWNLOAD APP & <br />
               GET THE VOUCHER!
@@ -34,13 +55,13 @@ const Download = () => {
                 />
               </li>
             </ul>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div custom={2} variants={Animation}>
             <img className="download__google-phone" src={Vouch} alt="vouch" />
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
