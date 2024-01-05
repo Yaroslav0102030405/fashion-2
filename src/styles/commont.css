@@ -6,6 +6,25 @@ body {
   cursor: url('../image/cursor-yellow.png'), auto;
 }
 
+/* add scrollbar */
+.window {
+overflow: auto;
+/* border: 1px solid black; */
+border-radius: 5px 0 0 5px;
+}
+
+::-webkit-scrollbar {
+  /* border: 1px solid black; */
+  /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(89,84,12,0.6615896358543417) 0%, rgba(248,245,13,1) 60%, rgba(209,134,84,0.017331932773109293) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: black;
+  /* border: 1px solid black; */
+}
+
 .container {
   /* max-width: 1780px; */
   margin: 0 auto;
